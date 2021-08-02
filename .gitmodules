@@ -1,0 +1,9 @@
+[submodule "workflow/scripts/LinearPartition"]
+	path = workflow/scripts/LinearPartition
+	url = https://github.com/LinearFold/LinearPartition.git
+[submodule "workflow/scripts/colTab"]
+	path = workflow/scripts/colTab
+	url = git@github.com:dannyxbergeron/colTab.git
+[submodule "workflow/scripts/gtfParser"]
+	path = workflow/scripts/gtfParser
+	url = git@github.com:dannyxbergeron/gtfParser.git

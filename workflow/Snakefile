@@ -1,0 +1,17 @@
+include: "rules/common.smk"
+
+##### Target rules #####
+
+
+rule all:
+    input:
+        get_final_output(),
+
+
+##### Modules #####
+
+include: "rules/download_and_prepare_tools.smk"
+include: "rules/ref.smk"
+# include: "rules/sequence_getter.smk"
+# include: "rules/LinearFold.smk"
+# include: "rules/vizualization.smk"

@@ -1,0 +1,17 @@
+channels:
+  - default
+  - bioconda
+  - conda-forge
+dependencies:
+  - viennarna =2.4.18
+  - forgi =2.0.3
+  - matplotlib =3.3.1
+  - numpy =1.16.4
+  - pandas =0.24.2
+  - scipy =1.5.2
+  - networkx =2.6.2
+  - biopython =1.78
+  - appdirs =1.4.4
+  - logging_exceptions =0.1.8
+  - beautifulsoup4 =4.9.3
+  - cython =0.29.24

@@ -1,0 +1,4 @@
+sample	unit	gene_id	coordinates	fasta
+SNORD2	1	ENSG00000238942
+SNORD2_Intron	1		chr3:186784795-186784961:+
+SNORA12_CWF19L1	1			data/fasta/SNORA12_CWF19L1.fa

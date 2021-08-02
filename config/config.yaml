@@ -1,0 +1,13 @@
+samples: ../config/samples.tsv
+units: ../config/units.tsv
+
+ref:
+  # ensembl species name
+  species: homo_sapiens
+  # ensembl release
+  release: 104
+  # genome build
+  build: GRCh38
+
+# UCSC tools used to compress and decompress fasta
+ucsc_tools: ["faToTwoBit", "twoBitToFa"]
