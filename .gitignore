@@ -18,6 +18,8 @@
 !workflow/scripts/*
 !workflow/rules
 !workflow/rules/*
+!workflow/schemas
+!workflow/schemas/*
 
 workflow/data
 workflow/data/*

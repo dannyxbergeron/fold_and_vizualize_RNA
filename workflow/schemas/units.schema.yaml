@@ -1,0 +1,24 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+description: row of the units.tsv, representing dna sequence to be fold and vizualize
+type: object
+properties:
+  sample:
+    type: string
+    description: sample name/id the unit to be folded
+  unit:
+    type: string
+    description: unit id
+  gene_id:
+    type: string
+    description: ensembl gene id
+  coordinates:
+    type: string
+    description: coordinates of the genome (chr:start-end:strand)
+    pattern: chr[\d\w]+:\d+-\d+:[-+]
+  fasta:
+    type: string
+    description: path to the fasta file
+required:
+  - sample
+  - unit
+oneOf: [required: [gene_id], required: [coordinates], required: [fasta]]
