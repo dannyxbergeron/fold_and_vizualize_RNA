@@ -1,9 +1,12 @@
 rule viz_representation:
     input:
-        fx_file = 'data/dot_bracket/SNORD2_Intron_LinearPartition.fx'
+        fx_file = "results/dot_bracket/{sample_unit}.fx",
+        mfe = "results/mfe/{sample_unit}.txt"
     output:
-        svg = 'data/svgs/SNORD2_Intron.svg'
+        svg = "results/svgs/{sample_unit}.svg"
+    log:
+        "logs/viz_representation_{sample_unit}.log",
     conda:
-        'envs/python.yaml'
+        '../envs/python_forgi.yaml'
     script:
-        'scripts/viz_RNA_fold.py'
+        '../scripts/viz_RNA_fold.py'

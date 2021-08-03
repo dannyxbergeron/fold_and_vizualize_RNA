@@ -21,3 +21,8 @@
 
 workflow/data
 workflow/data/*
+
+workflow/scripts/twoBitToFa
+workflow/scripts/faToTwoBit
+
+workflow/scripts/colTab

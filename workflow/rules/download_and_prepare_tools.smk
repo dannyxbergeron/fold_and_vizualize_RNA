@@ -11,7 +11,9 @@ rule download_ucsc_tools:
         "http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit && "
         "wget --quiet "
         "-O {output.twoBitToFa} "
-        "http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/twoBitToFa"
+        "http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/twoBitToFa && "
+        "chmod +x {output.faToTwoBit} && "
+        "chmod +x {output.twoBitToFa}"
 
 rule compile_LinearPartition:
     output:
