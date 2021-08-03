@@ -17,9 +17,12 @@ cg = forgi.load_rna(fx_file, allow_many=False)
 ax, _ = fvm.plot_rna(
      cg,
      text_kwargs={"fontweight":"ultralight", 'fontsize': 4, "color": '#2F3236'},
-     lighten=.85,
-     backbone_kwargs={"linewidth":0.5, "color": "#2F3236"}
+     lighten=0.85,
+     color=True,
+     backbone_kwargs={"linewidth":0.5, "color": "#2F3236"},
+     basepair_kwargs={"linewidth":1, 'color': 'red'},
 )
 
 ax.set_title(f'{snakemake.wildcards[0]}\n({mfe})')
+# plt.show()
 plt.savefig(out, format='svg')
