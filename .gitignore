@@ -20,6 +20,16 @@
 !workflow/rules/*
 !workflow/schemas
 !workflow/schemas/*
+!workflow/report
+!workflow/report/*
+
+!.test
+!.test/*
+!.test/config
+!.test/config/*
+!.test/data
+!.test/data/*
+!.test/report.html
 
 workflow/data
 workflow/data/*

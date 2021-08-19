@@ -2,8 +2,16 @@ rule run_linear_fold:
     input:
         fasta = "results/fasta/{sample_unit}.fa"
     output:
-        dot_bracket = "results/dot_bracket/{sample_unit}.fx",
-        mfe = "results/mfe/{sample_unit}.txt"
+        dot_bracket = report(
+            "results/dot_bracket/{sample_unit}.fx",
+            caption="../report/dot_bracket.rst",
+            category="Dot_brackets",
+        ),
+        mfe = report(
+            "results/mfe/{sample_unit}.txt",
+            caption="../report/mfe.rst",
+            category="Mfe",
+        )
     log:
         "logs/run_linear_fold_{sample_unit}.log",
     shell:
