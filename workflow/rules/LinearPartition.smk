@@ -1,4 +1,4 @@
-rule run_linear_fold:
+rule run_linear_partition:
     input:
         fasta = "results/fasta/{sample_unit}.fa"
     output:
@@ -13,7 +13,7 @@ rule run_linear_fold:
             category="Mfe",
         )
     log:
-        "logs/run_linear_fold_{sample_unit}.log",
+        "logs/run_linear_partition_{sample_unit}.log",
     shell:
         "cat {input.fasta} "
         "| grep -v '^>' "

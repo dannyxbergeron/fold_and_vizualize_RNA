@@ -1,1 +1,1 @@
-Dot bracket generated with LinearFold to be used for the subsequent folding.
+Dot bracket generated with LinearPartition to be used for the subsequent folding.

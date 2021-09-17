@@ -13,5 +13,5 @@ rule all:
 include: "rules/download_and_prepare_tools.smk"
 include: "rules/ref.smk"
 include: "rules/sequence_getter.smk"
-include: "rules/LinearFold.smk"
+include: "rules/LinearPartition.smk"
 include: "rules/vizualization.smk"
